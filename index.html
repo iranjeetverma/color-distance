@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+	<title>Hurix</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id = "header"></div>
+	<div id = "left-block">
+		<div class = "menu-section">
+			<select id = 'select'>
+			  	<option value="color">Color</option>
+			  	<option value="distance">Distance</option>
+			</select>
+		</div>
+		<div class = "input-section">
+			<div class = "section color">
+				<div class="block">
+					<span class="input-title">Red (RGB Value):</span>
+					<input type="number" name="" id="red" onchange="changevalue(this);">
+				</div>
+				<div  class="block">
+					<span  class="input-title">Green (RGB Value):</span>
+					<input type="number" name="" id="green" onchange="changevalue(this);">
+				</div>
+				<div  class="block">
+					<span  class="input-title">Blue (RGB Value):</span>
+					<input type="number" name="" id="blue" onchange="changevalue(this);">
+				</div>
+				<div class="btn">
+					<button class = "submi color">Submit</button>
+				</div>
+			</div>
+			<div class="section distance">
+				<div  class="block">
+					<span class="input-title">Time (In Minutes):</span>
+					<input type="text" name="" id = "time">
+				</div>
+				<div  class="block">	
+					<span class="input-title">Speed (Km/Hours):</span>
+					<input type="text" name="" id = "speed">
+				</div>
+				<div class="btn">
+					<button class = "time">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id = "Right-block">
+		<div class = "result"></div>
+	</div>
+</body>
+</html>
